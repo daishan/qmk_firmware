@@ -1,8 +1,5 @@
 #include "quantum.h"
-
-#ifdef RGB_MATRIX_ENABLE
-#include "rgb_matrix.h"
-#endif
+#include "rgblight.h"
 
 
 #define _______ KC_TRNS
@@ -58,6 +55,8 @@
 #define __F11__ KC_F11
 #define __F12__ KC_F12
 
+#define RGBSWRL RGB_MODE_SWIRL
+
 #define TAP_ONCE(code)  \
     register_code(code); \
     unregister_code(code)
@@ -70,4 +69,13 @@ enum custom_keycodes {
     THUMBUP,
 };
 
+enum userspace_layers {
+  BASE = 0,
+  FN1,
+  FN2,
+  GAM,
+  CAP,
+};
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record);
+void matrix_init_user(void);
