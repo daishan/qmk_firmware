@@ -57,6 +57,11 @@
 
 #define RGBSWRL RGB_MODE_SWIRL
 
+#define DESKUP  LCTL(LALT(KC_UP))
+#define DESKDWN LCTL(LALT(KC_DOWN))
+#define DESKLFT LCTL(LALT(KC_LEFT))
+#define DESKRGT LCTL(LALT(KC_RGHT))
+
 #define TAP_ONCE(code)  \
     register_code(code); \
     unregister_code(code)
