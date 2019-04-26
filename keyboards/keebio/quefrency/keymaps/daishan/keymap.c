@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, SHRUG,   POOP,    FLIPTAB, FLIPTA2, THUMBUP, M(6),    M(7),    M(8),    M(9),    M(10),    M(11),    M(12),   _______,
         _______,  KC_MUTE, KC_VOLU, RGBSWRL, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, _______, _______,  RESET,
         _______,   KC_WBAK, KC_VOLD, KC_WFWD, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
-        _______,    _______, BL_DEC,  BL_TOGG, BL_INC,  BL_STEP, _______, _______, _______, _______, _______,        _______,  _______,
+        _______,    _______, BL_DEC,  BL_TOGG, BL_INC,  BL_STEP, _______, _______, _______, _______, _______,        _______,  KC_MPLY,
         _______,  TG(CAP),  _______,     _______, TG(GAM),      _______, _______,      _______,  _______,  _______,  _______,  RGB_TOG),
 
     [CAP] = LAYOUT_daishan(
