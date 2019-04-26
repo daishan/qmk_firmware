@@ -55,6 +55,11 @@
 #define __F11__ KC_F11
 #define __F12__ KC_F12
 
+#define __F13__ KC_F13
+#define __F14__ KC_F14
+#define __F15__ KC_F15
+#define __F16__ KC_F16
+
 #define RGBSWRL RGB_MODE_SWIRL
 
 #define DESKUP  LCTL(LALT(KC_UP))
