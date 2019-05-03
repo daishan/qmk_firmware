@@ -25,3 +25,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define USE_SERIAL
  #define USE_I2C
+
+
+/* When using I2C without this the slave half is unresponsive after leaving
+ * the computer for a while, probably triggered by a USB suspend.
+ *
+ * NO_USB_STARTUP_CHECK appears to resolve the issue.
+ *
+ * (Without this and with serial both halves are unresponsive, but I didn't
+ * test if this option helps in that case as well.)
+ */
+#define NO_USB_STARTUP_CHECK
