@@ -17,6 +17,8 @@
 	{ K400,  K401,  K402,  KC_NO, K404,  KC_NO, K406,  KC_NO, K408,  KC_NO, K410,  K411,  K412,  K413,  KC_NO }  \
 }
 
+#define CTRLBSP C(KC_BSPC)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE] = LAYOUT_daishan(
         KC_GESC, ___1___, ___2___, ___3___, ___4___, ___5___, ___6___, ___7___, ___8___, ___9___, ___0___, KC_MINS, KC_EQL,    KC_BSPC,
@@ -30,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  DESKUP,  KC_UP,   DESKDWN, _______, _______, _______, KC_PSCR, KC_SLCK, KC_PAUS, _______, _______, _______,  RESET,
         _______,   KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, _______, KC_INS,  KC_HOME, KC_PGUP, _______, _______,          _______,
         _______,    _______, _______, _______, _______, C(KC_B), C(KC_N), KC_DEL,  KC_END,  KC_PGDN, _______,       _______,   _______,
-        _______,    _______,    _______,           _______,  _______,  _______,             _______,    _______,    __F13__,   _______),
+        _______,    _______,    _______,           CTRLBSP,  _______,  _______,             _______,    _______,    __F13__,   _______),
 
     [FN2] = LAYOUT_daishan(
         _______, SHRUG,   POOP,    FLIPTAB, FLIPTA2, THUMBUP, M(6),    M(7),    M(8),    M(9),    M(10),    M(11),    M(12),   _______,
