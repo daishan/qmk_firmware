@@ -87,11 +87,11 @@ uint32_t layer_state_set_user(uint32_t state) {
     if (IS_LAYER_ON(CAP)) {
         rememberRgbState();
         rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
-        rgblight_sethsv_noeeprom(30, rgblight_config.sat, rgblight_config.val);
+        rgblight_sethsv_noeeprom(21, rgblight_config.sat, rgblight_config.val);
     } else if (IS_LAYER_ON(GAM)) {
         rememberRgbState();
         rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
-        rgblight_sethsv_noeeprom(270, rgblight_config.sat, rgblight_config.val);
+        rgblight_sethsv_noeeprom(191, rgblight_config.sat, rgblight_config.val);
     } else {
         restoreRgbState();
     }
