@@ -17,7 +17,9 @@
 	{ K400,  K401,  K402,  KC_NO, K404,  KC_NO, K406,  KC_NO, K408,  KC_NO, K410,  K411,  K412,  K413,  KC_NO }  \
 }
 
-#define CTRLBSP C(KC_BSPC)
+#define CTRLBSP LCTL(KC_BSPC)
+#define WINLEFT LGUI(KC_LEFT)
+#define WINRGHT LGUI(KC_RGHT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE] = LAYOUT_daishan(
@@ -31,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV,  __F1___, __F2___, __F3___, __F4___, __F5___, __F6___, __F7___, __F8___, __F9___, __F10__, __F11__, __F12__,   KC_DEL,
         _______,  DESKUP,  KC_UP,   DESKDWN, _______, _______, _______, KC_PSCR, KC_SLCK, KC_PAUS, _______, _______, _______,  RESET,
         _______,   KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, _______, KC_INS,  KC_HOME, KC_PGUP, _______, _______,          _______,
-        _______,    _______, _______, _______, _______, C(KC_B), C(KC_N), KC_DEL,  KC_END,  KC_PGDN, _______,       _______,   _______,
+        _______,    WINLEFT, WINRGHT, _______, _______, C(KC_B), C(KC_N), KC_DEL,  KC_END,  KC_PGDN, _______,       _______,   _______,
         _______,    _______,    _______,           CTRLBSP,  _______,  _______,             _______,    _______,    __F13__,   _______),
 
     [FN2] = LAYOUT_daishan(
