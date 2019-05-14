@@ -67,6 +67,10 @@
 #define DESKLFT LCTL(LALT(KC_LEFT))
 #define DESKRGT LCTL(LALT(KC_RGHT))
 
+#define WINLEFT LGUI(KC_LEFT)
+#define WINRGHT LGUI(KC_RGHT)
+
+
 #define TAP_ONCE(code)  \
     register_code(code); \
     unregister_code(code)

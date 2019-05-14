@@ -18,9 +18,6 @@
 }
 
 #define CTRLBSP LCTL(KC_BSPC)
-#define WINLEFT LGUI(KC_LEFT)
-#define WINRGHT LGUI(KC_RGHT)
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE] = LAYOUT_daishan(
         KC_GESC, ___1___, ___2___, ___3___, ___4___, ___5___, ___6___, ___7___, ___8___, ___9___, ___0___, KC_MINS, KC_EQL,    KC_BSPC,
