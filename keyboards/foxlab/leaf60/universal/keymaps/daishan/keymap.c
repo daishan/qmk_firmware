@@ -1,4 +1,4 @@
-#include "leaf60_universal.h"
+#include "universal.h"
 #include "daishan.h"
 
 // no split backspace -> fixed K014 to KC_NO
