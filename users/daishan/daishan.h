@@ -2,7 +2,7 @@
 #include "rgblight.h"
 
 
-#define _______ KC_TRNS
+//#define _______ KC_TRNS
 
 #define ___1___ KC_1
 #define ___2___ KC_2
