@@ -77,10 +77,6 @@
 #define WINRGHT LGUI(KC_RGHT)
 
 
-#define TAP_ONCE(code)  \
-    register_code(code); \
-    unregister_code(code)
-
 enum custom_keycodes {
     SHRUG = SAFE_RANGE,
     POOP,
