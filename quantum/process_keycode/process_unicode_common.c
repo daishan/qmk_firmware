@@ -134,7 +134,9 @@ __attribute__((weak)) void unicode_input_finish(void) {
             unregister_code(UNICODE_KEY_MAC);
             break;
         case UC_LNX:
+            wait_ms(UNICODE_TYPE_DELAY);
             tap_code(KC_SPACE);
+            wait_ms(UNICODE_TYPE_DELAY);
             if (unicode_saved_caps_lock) {
                 tap_code(KC_CAPS_LOCK);
             }
