@@ -9,7 +9,7 @@ bool specialLayerActive = false;
 
 void matrix_init_user(void) {
     #ifdef UNICODE_ENABLE
-    set_unicode_input_mode(UC_LNX);
+    set_unicode_input_mode(UNICODE_MODE_LINUX);
     #endif
 }
 
@@ -60,7 +60,7 @@ void restoreRgbState(void) {
     }
 }
 
-uint32_t layer_state_set_user(uint32_t state) {
+layer_state_t layer_state_set_user(layer_state_t state) {
     // check layers from top to bottom
     if (IS_LAYER_ON(CAP)) {
         rememberRgbState();
