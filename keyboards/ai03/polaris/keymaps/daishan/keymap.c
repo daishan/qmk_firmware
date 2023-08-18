@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, SHRUG,   POOP,    FLIPTAB, FLIPTA2, THUMBUP, _______, _______, _______, _______, _______, _______, _______,   _______,
         _______,  KC_MUTE, KC_VOLU, RGBSWRL, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, _______, _______,  QK_BOOT,
         _______,   KC_WBAK, KC_VOLD, KC_WFWD, _______, _______, _______, _______, _______, _______, _______, _______,          _______,
-        _______,    _______, BL_DEC,  BL_TOGG, BL_INC,  BL_STEP, _______, _______, KC_WH_U, KC_WH_D, _______,                  KC_MPLY,
+        _______,    _______, BL_DOWN, BL_TOGG, BL_UP,   BL_STEP, _______, _______, KC_WH_U, KC_WH_D, _______,                  KC_MPLY,
         _______,    TG(CAP),    _______,                      TG(GAM),                      _______,    __F13__,    _______,   RGB_TOG),
 
 
